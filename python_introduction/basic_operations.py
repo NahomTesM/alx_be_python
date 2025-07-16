@@ -1,5 +1,5 @@
-number1 = int(input("Enter first number: "))
-number2 = int(input("Enter second number: "))
+number1 = 10
+number2 = 5
 
 sum = number1 + number2
 diff = number1 - number2
