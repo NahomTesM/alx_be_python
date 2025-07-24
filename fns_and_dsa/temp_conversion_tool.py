@@ -12,19 +12,19 @@ def convert_to_fahrenheit(celsius):
 temprature = input("Enter the temperature to convert: ")
 
 try:
-        num = int(input("Enter an integer: "))
-        print(f"You entered an integer: {num}")
+    temperature = float(input("Enter the temperature to convert: "))
 except ValueError:
-        print("Invalid input. Please enter an integer.")
+    print("Invalid temperature. Please enter a numeric value.")
+    exit()
 
 
 type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
 if type == 'C':
-    result = convert_to_fahrenheit()
+    result = convert_to_fahrenheit(temprature)
     print(f"{temprature}C is {result}")
 elif type == 'F':
-    result = convert_to_celsius()
+    result = convert_to_celsius(temprature)
     print(f"{temprature}F is {result}")
 else:
     print("Enter C or F")
